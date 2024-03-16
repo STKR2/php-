@@ -8,6 +8,7 @@
     "website": "https://t.me/DevZaid",
     "repository": "https://github.com/cv0v/quran-radio",
     "success_url": "https://t.me/Y88F8",
+    "stack": "container",
     "env": {
         "API_ID": {
             "description": "قم بوضع الايبي ايدي هنا",
@@ -38,25 +39,18 @@
             "description": "اسم القارئ المحدد ( يجب ان يكون الاسم مطابق لقاعدة البيانات ) - اترك الحقل فارغ حتى يكون قارئ عشوائي كل مرة",
             "required": false,
             "value": ""
-        }
+            }
     },
-    "addons": [],
     "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "heroku/nodejs"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "eco"
-        }
-    },
-    "stack": "container"
-}
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
